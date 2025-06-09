@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Urupoly.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Urupoly"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Urupoly">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <StackPanel>
+        <StackPanel x:Name="AppTitleBar" Orientation="Horizontal" Margin="20, 10, 0, 0">
+            <Image Source="/Assets/Uru.png"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Width="24" Height="24"
+            Visibility="Visible"/>
+            <TextBlock Padding="6, 2, 0, 0">Urupoly</TextBlock>
+        </StackPanel>
+
+        <Grid 
+            ColumnSpacing="20"
+            Margin="20, 40, 0 , 0"
+        >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Spacing="40">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Source="/Assets/pfp.jpg" Height="128" Width="128"/>
+                    <StackPanel>
+                        <TextBlock Margin="10, 0, 0, 0">Player 1</TextBlock>
+                        <TextBlock Margin="10, 20, 0, 0">Money</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Source="/Assets/pfp.jpg" Height="128" Width="128"/>
+                    <StackPanel>
+                        <TextBlock Margin="10, 0, 0, 0">Player 2</TextBlock>
+                        <TextBlock Margin="10, 20, 0, 0">Money</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Source="/Assets/pfp.jpg" Height="128" Width="128"/>
+                    <StackPanel>
+                        <TextBlock Margin="10, 0, 0, 0">Player 3</TextBlock>
+                        <TextBlock Margin="10, 20, 0, 0">Money</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Image Source="/Assets/pfp.jpg" Height="128" Width="128"/>
+                    <StackPanel>
+                        <TextBlock Margin="10, 0, 0, 0">Player 4</TextBlock>
+                        <TextBlock Margin="10, 20, 0, 0">Money</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Grid>
+                    
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Window>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Urupoly (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Urupoly (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
