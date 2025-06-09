@@ -15,6 +15,7 @@
   <ItemGroup>
     <None Remove="Assets\pfp.jpg" />
     <None Remove="Assets\Uru.png" />
+    <None Remove="Tile.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,6 +48,11 @@
     <Content Update="Assets\Uru.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Tile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <!--
